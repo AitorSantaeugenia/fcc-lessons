@@ -36,8 +36,9 @@ so the text displays the data value.
       .attr("height", (d, i) => d * 3)
       .attr("fill", "navy")
       .attr("class", "bar")
-    // Add your code below this line
-
+      // Add your code below this line
+      .append("title")
+      .text((d) => d)
 
 
     // Add your code above this line
