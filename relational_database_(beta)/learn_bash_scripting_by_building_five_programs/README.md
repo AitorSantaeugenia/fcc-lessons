@@ -77,10 +77,10 @@ in bash -eq (equal), -ne (not equal), -lt (less than), -le (less than or equal),
 ~~~
 
 <code>
-#1 you can type [[ 4 -ge 5 ]] in bash terminal<br>
-#2 but to see the result, after the first command #1 you need to type again (after the first one) an echo $?<br>
-#3 or all in one liner: [[ 4 -ge 5 ]]; echo $?<br>
-it will print 0 or 1 (true or false) - Opposite to javascript, for example
+#1 you can type [[ 4 -ge 5 ]] in bash terminal <br>
+#2 but to see the result, after the first command #1 you need to type again (after the first one) an echo $? <br>
+#3 or all in one liner: [[ 4 -ge 5 ]]; echo $? <br>
+it will print 0 or 1 (true or false) - Opposite to javascript, for example <br><br>
 </code>
 
 ~~~
