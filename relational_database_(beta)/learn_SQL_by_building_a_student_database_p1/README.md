@@ -1,4 +1,4 @@
-# PostgreSQL
+# # PostgreSQL learn by building a student DDBB part1
 
 ## Log into the psql interactive terminal
 
@@ -94,3 +94,25 @@ echo $($PSQL "TRUNCATE students, majors, courses, majors_courses")
 
 ## Dump the work done to a students.sql
 <code>pg_dump --clean --create --inserts --username=freecodecamp students > students.sql</code>
+<br><br>
+
+---
+
+# Tables created
+### List of relations
+   ![List of relations](https://user-images.githubusercontent.com/14861253/190935205-46ac1dcb-8c01-48c0-a4fb-963b3400febd.png)
+
+### course
+   ![course table](https://user-images.githubusercontent.com/14861253/190935261-a3248615-3b6e-4a34-b4c9-2941c47b66e5.png)
+
+### students
+   ![students table](https://user-images.githubusercontent.com/14861253/190935291-e38d5fc1-7d06-4b86-88dc-699baf1ea513.png)
+
+### major
+   ![major table](https://user-images.githubusercontent.com/14861253/190935327-2c1b7fa2-657b-4497-9d8b-fb5c313ad8ef.png)
+
+### courses
+   ![courses table](https://user-images.githubusercontent.com/14861253/190935367-440a6195-65d1-49b9-9161-10c8a49eb748.png)
+
+### majors
+   ![majors table](https://user-images.githubusercontent.com/14861253/190935407-6a33e1ec-9e3a-4dc9-9d44-1b969c5d5717.png)
