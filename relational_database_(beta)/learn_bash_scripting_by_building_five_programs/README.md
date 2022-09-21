@@ -1,5 +1,5 @@
 ## RUN SCRIPTS in terminal
-~~~
+https://github.com/AitorSantaeugenia/freecodecamp-projects/blob/main/relational_database_(beta)/Project_1_Celestial_bodies_database/universe.sql
 sh questionnaire.sh
 bash questionnaire.sh 
 ./questionnaire.sh 
