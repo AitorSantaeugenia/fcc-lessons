@@ -99,7 +99,7 @@ echo "$(echo '   M e   ' | sed -E 's/^ *| *$//g')."
 
 <code>What we type in script</code>
 
-View the ![script](https://user-images.githubusercontent.com/14861253/190935407-6a33e1ec-9e3a-4dc9-9d44-1b969c5d5717.png)
+View the [script](https://github.com/AitorSantaeugenia/fcc-lessons/blob/master/relational_database_(beta)/learn_bash_and_sql_by_building_a_bike_rental_shop/bike_shop.sh).
 
 
 
