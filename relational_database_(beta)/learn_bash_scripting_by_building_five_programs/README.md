@@ -1,5 +1,6 @@
 ## RUN SCRIPTS in terminal
-https://github.com/AitorSantaeugenia/freecodecamp-projects/blob/main/relational_database_(beta)/Project_1_Celestial_bodies_database/universe.sql
+
+~~~bash
 sh questionnaire.sh
 bash questionnaire.sh 
 ./questionnaire.sh 
@@ -102,14 +103,14 @@ e.g:
 ~~~
 
 ## FOR in bash
-~~~
+~~~sh
 for (( i = 10; i > 0; i-- ))
 do
   echo $i
 done
 ~~~
 
-~~~
+~~~sh
 ## will print numbers from 10 to 0
 if [[ $1 -gt 0 ]]
 then
@@ -123,7 +124,7 @@ fi
 ~~~
 
 ## Sleep command -> sleep 1 will show every number after 1 sec (sleep 3 after 3, etc)
-~~~
+~~~sh
 if [[ $1 -gt 0 ]]
 then
   for (( i = $1; i > 0; i-- ))
@@ -146,7 +147,7 @@ fi
 
 <code>e.g.</code>
 
-~~~
+~~~sh
 if [[ $1 -gt 0 ]]
 then
 : '
@@ -162,7 +163,7 @@ fi
 ~~~
 
 ## WHILE in bash:
-~~~
+~~~sh
 while [[ CONDITION ]]
 do
   STATEMENTS
@@ -171,7 +172,7 @@ done
 
 <code>e.g.</code>
 
-~~~
+~~~sh
 if [[ $1 -gt 0 ]]
 then
 I=$1
@@ -185,7 +186,7 @@ fi
 ~~~
 
 ### (( I-- )) : Substractor
-~~~
+~~~sh
 if [[ $1 -gt 0 ]]
 then
 I=$1
@@ -208,7 +209,7 @@ type printenv
 
 <code>e.g.</code>
 
-~~~
+~~~sh
 echo $LANG will print in terminal -> en_US.UTF-8
 echo $RANDOM will print in terminal a number between 0 and 32767
 ~~~
@@ -219,7 +220,7 @@ declare -p
 ~~~
 
 ## Operators in terminal (not script)
-~~~
+~~~sh
 I = 0
 (( I++ ))
 (( I += 10 ))
@@ -228,7 +229,7 @@ I = 0
 ## With a $ before, it will just do the operation without saving to the variable
 <code>(( ... )) will perform a calculation or operation and output nothing. $(( ... )) will replace the calculation with the result of it </code>
 
-~~~
+~~~sh
 $(( I +4 ))
 echo $(( I + 4 )) -> will print 15
 
@@ -256,14 +257,14 @@ ARR =("a" "b" "c")
 
 <code>to check in terminal:</code>
 
-~~~
+~~~console
 echo ${ARR[1]} 
 will print "b"
 ~~~
 
 <code>to print all:</code>
 
-~~~
+~~~sh
 echo ${ARR[@]} 
 will print a b c
 
