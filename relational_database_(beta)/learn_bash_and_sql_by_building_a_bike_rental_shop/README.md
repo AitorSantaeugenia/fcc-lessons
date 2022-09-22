@@ -100,34 +100,3 @@ echo "$(echo '   M e   ' | sed -E 's/^ *| *$//g')."
 <code>What we type in script</code>
 
 View the [script](https://github.com/AitorSantaeugenia/fcc-lessons/blob/master/relational_database_(beta)/learn_bash_and_sql_by_building_a_bike_rental_shop/bike_shop.sh).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

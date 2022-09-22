@@ -147,15 +147,3 @@ SELECT * FROM students FULL JOIN majors USING(major_id);
 SELECT * FROM students FULL JOIN majors USING(major_id) FULL JOIN majors_courses USING(major_id);
 SELECT * FROM students FULL JOIN majors USING(major_id) FULL JOIN majors_courses USING(major_id) FULL JOIN courses USING(course_id);
 ~~~
-
-
-
-
-
-
-
-
-
-
-
-

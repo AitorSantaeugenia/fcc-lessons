@@ -162,5 +162,3 @@ SELECT * FROM characters FULL JOIN more_info ON characters.character_id = more_i
 SELECT * FROM characters FULL JOIN sounds ON characters.character_id = sounds.character_id;
 SELECT * FROM character_actions FULL JOIN characters ON character_actions.character_id = characters.character_id FULL JOIN actions ON character_actions.action_id = actions.action_id;
 ```
-
----

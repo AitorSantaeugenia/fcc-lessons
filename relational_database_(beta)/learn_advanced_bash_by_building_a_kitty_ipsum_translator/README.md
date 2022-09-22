@@ -363,18 +363,3 @@ diff kitty_ipsum_1.txt doggy_ipsum_1.txt
 ~~~
 
 <code>You can use diff --color too</code>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
