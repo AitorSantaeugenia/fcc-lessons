@@ -90,6 +90,10 @@ a5de944 feat: add create database reference
 a029be1 Initial commit
 ~~~
 
+<code>Shows first or 1-5 logs in one line</code><br>
+<code>-- git log --oneline -1</code><br>
+<code>-- git log --oneline -5</code>
+
 ---
 
 ## git diff
@@ -106,18 +110,13 @@ a029be1 Initial commit
 
 ---
 
-## git log
-<code>Check your commit history</code>
-
----
-
 ## git merge
 <code>-- git merge < branch > </code><br>
 <code>bring changes from a branch into the branch you are currently on.</code>
 
 ---
 
-## git rebase main
+## git rebase
 <code>Moves the combining sequence of commits into a new base commit </code><br>
 
 ~~~bash
@@ -241,5 +240,10 @@ s 513bb73 feat: add foreign key reference
 <code>Reverting is a good way to undo a commit because you don't lose the commit from the history.</code><br>
 <code>e.g.</code><br>
 <code>-- git revert HEAD</code><br>
+
+---
+
+## .env
+<code>.env files are used to store environment variables for running code. Often times, there may be sensitive information in it. </code>
 
 ---
