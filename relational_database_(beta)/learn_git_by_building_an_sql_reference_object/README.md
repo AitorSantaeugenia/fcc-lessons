@@ -121,19 +121,79 @@ a029be1 Initial commit
 <code>Moves the combining sequence of commits into a new base commit </code><br>
 
 ~~~bash
-### e.g.
+## e.g.
 git checkout -b bug-branch
-### we change a file now, named fileb.json
+## we change a file now, named fileb.json
 git add fileb.json
 git commit -m "solved a bug"
 git rebase main
 git branch -d bug-branch
-### it will show the commit we made in the main logs
+## it will show the commit we made in the main logs
 ~~~
 
 ### Flags
 <code>-- git rebase --continue</code><br>
 <code>Continue the rebase if no conflicts</code>
+
+<code>-- git rebase --interactive HEAD~2</code><br>
+<code>For manipulate commits</code>
+
+#### Changing own commits
+
+<code>Delete commit, with "d"</code><br>
+<code>-- git rebase --interactive --root</code>
+
+~~~console
+## pick means that it will use the commits as they are
+## we change the word pick to d for delete the commits and save the file
+## e.g.| d cfd3983 feat: add unique reference
+pick cfd3983 feat: add unique reference
+d 1250443 Revert "feat: add unique reference"
+~~~
+
+<code>Manipulate commits (change tittle), with "r"</code><br>
+<code>-- git rebase --interactive --root</code>
+
+~~~console
+## then change pick with r, label for "reword" of the commit we want to change
+pick cfd3983 feat: add unique reference
+r 1250443 Revert "feat: add unique reference"
+
+# It will open a file with nano command, where you can change the commit title
+~~~
+
+<code>Squasing commits, with "s"</code><br>
+<code>Squashing commits mean that you will take a bunch of commits, and turn them into one</code><br>
+<code>-- git rebase --interactive --root</code>
+
+~~~console
+## then change pick with s, label for "squashing", all the commits you want to "squash"
+pick 6ff662e feat: add column references
+s b8f7cd4 feat: add drop column reference
+s 04dc3cc feat: add rename column reference
+s 32ba022 feat: add primary key reference
+s 513bb73 feat: add foreign key reference
+
+# It will open a file with nano command, just exit it
+~~~
+
+<code>Other commands for git rebase --interactive</code><br>
+
+~~~bash
+# Rebase 7393386..1250443 onto 7393386 (2 commands)
+#
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup <commit> = like "squash", but discard this commit's log message
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+~~~
 
 ---
 
@@ -166,6 +226,20 @@ git branch -d bug-branch
 <code>-- git stash drop</code><br>
 <code>Drop a stash.</code>
 
+---
 
+## git reset
+
+<code>Travel to any point in your commit history</code><br>
+<code>e.g.</code><br>
+<code>-- git reset HEAD~1</code><br>
+
+---
+
+## git revert
+
+<code>Reverting is a good way to undo a commit because you don't lose the commit from the history.</code><br>
+<code>e.g.</code><br>
+<code>-- git revert HEAD</code><br>
 
 ---
