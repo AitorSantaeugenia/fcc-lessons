@@ -25,12 +25,6 @@ app.get("/json", (req, res) => {
     }
 });
 
-app.use(function middleware(req, res, next) {
-    // Do something
-    // Call the next function in line:
-    next();
-});
-
 console.log("Hello World");
 
 
