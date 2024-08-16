@@ -3,8 +3,7 @@
 	"author": "Aitor J. Santaeugenia",
 	"description": "freeCodeCamp 6-Backend development course",
 	"dependencies": {
-		"express": "^4.14.0",
-		"@freecodecamp/example": "^1.2.13"
+		"express": "^4.14.0"
 	},
 	"keywords": [ "FreeCodeCamp", "Course", "Development", "freecodecamp" ],
 	"main": "server.js",
