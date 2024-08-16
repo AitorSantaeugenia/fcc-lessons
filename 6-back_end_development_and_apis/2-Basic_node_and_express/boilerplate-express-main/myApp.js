@@ -7,6 +7,11 @@ app.get("/", function(req, res) {
     res.sendFile(__dirname + "/views/index.html");
 });
 
+app.use((req, res, next) => {
+	let string = req.method + " " + req.path + " - " + req.ip;
+	console.log(string);
+	next();
+});
 app.use("/public", express.static(__dirname + "/public"));
 
 let message = 'Hello json';
@@ -16,9 +21,14 @@ app.get("/json", (req, res) => {
         message = message.toUpperCase();
         res.json({ "message": message });
     } else {
-        console.log({ "message": message })
         res.json({ "message": message });
     }
+});
+
+app.use(function middleware(req, res, next) {
+    // Do something
+    // Call the next function in line:
+    next();
 });
 
 console.log("Hello World");
