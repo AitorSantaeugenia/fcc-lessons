@@ -1,0 +1,19 @@
+{
+	"name": "fcc-learn-npm-package-json",
+	"author": "Aitor J. Santaeugenia",
+	"description": "freeCodeCamp 6-Backend development course",
+	"dependencies": {
+		"express": "^4.14.0"
+	},
+	"keywords": [ "FreeCodeCamp", "Course", "Development", "freecodecamp" ],
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/freeCodeCamp/boilerplate-npm.git"
+	},
+	"license": "MIT",
+	"version": "1.0.0"
+}
