@@ -25,6 +25,17 @@ app.get("/json", (req, res) => {
     }
 });
 
+const middleware = (req, res, next) => {
+    req.time = new Date().toString();
+    next();
+};
+
+app.get("/now", middleware, (req, res) => {
+    res.send({
+        time: req.time
+    });
+});
+
 console.log("Hello World");
 
 
