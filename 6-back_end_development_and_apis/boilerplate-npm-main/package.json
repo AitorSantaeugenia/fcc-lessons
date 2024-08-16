@@ -1,6 +1,7 @@
 {
 	"name": "fcc-learn-npm-package-json",
 	"author": "Aitor J. Santaeugenia",
+	"description": "freeCodeCamp 6-Backend development course",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
