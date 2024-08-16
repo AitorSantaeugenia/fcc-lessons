@@ -1,3 +1,6 @@
-# MongoDB and Mongoose Challenges
+# MongoDB and Mongoose Challenges notes
 
-This is the boilerplate for the MongoDB and Mongoose lessons. Instructions for completing these lessons start at https://www.freecodecamp.org/learn/apis-and-microservices/mongodb-and-mongoose/
+## Mongoose conection
+Ensure special characters in your password are encoded. For example if your password contains '#' you should replace the literal '#' character with '%23' where 23 is the hex code for '#' see:<br>
+https://stackoverflow.com/questions/55753484/mongoparseerror-uri-does-not-have-hostname-domain-name-and-tld
+
