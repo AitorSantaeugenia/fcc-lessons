@@ -20,7 +20,7 @@ suite('Unit Tests', function () {
       assert.isOk("I'm truthy", 'A string is truthy');
       assert.isOk(true, 'true is truthy');
     });
-    // #4
+    // #4 - isFalse() and isNotFalse() also exist, and behave similarly to their true counterparts except they look for the boolean value of false.
     test('#isTrue, #isNotTrue', function () {
       assert.isTrue(true, 'true is true');
       assert.isTrue(!!'double negation', 'Double negation of a truthy value is true');
