@@ -53,9 +53,8 @@ myDB(async client => {
   app
   .route('/profile')
   .get(ensureAuthenticated, (req,res) => {
-     res.render('profile');
+    res.render('profile', { username: req.user.username });
   });
-  
 
   passport.use(new LocalStrategy((username, password, done) => {
     myDataBase.findOne({ username: username }, (err, user) => {
