@@ -13,6 +13,13 @@ const app = express();
 app.set('view engine', 'pug');
 app.set('views', './views/pug');
 
+function ensureAuthenticated(req, res, next) {
+  if (req.isAuthenticated()) {
+    return next();
+  }
+  res.redirect('/');
+};
+
 app.use(session({
   secret: process.env.SESSION_SECRET,
   resave: true,
@@ -43,9 +50,12 @@ myDB(async client => {
     res.redirect('/profile');
   })
 
-  app.route('/profile').get((req,res) => {
-    res.render('profile');
-  })
+  app
+  .route('/profile')
+  .get(ensureAuthenticated, (req,res) => {
+     res.render('profile');
+  });
+  
 
   passport.use(new LocalStrategy((username, password, done) => {
     myDataBase.findOne({ username: username }, (err, user) => {
