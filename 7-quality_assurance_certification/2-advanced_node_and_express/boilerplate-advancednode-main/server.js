@@ -43,3 +43,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
+
+//EX: follow this instructions to create the app -> https://www.freecodecamp.org/news/how-to-set-up-a-github-oauth-application/
